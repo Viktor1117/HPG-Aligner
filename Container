@@ -26,14 +26,14 @@ LC_ALL=C.UTF-8
     conda config --add channels conda-forge
     conda config --add channels bioconda
 
-sudo apt update
-sudo apt install build-essential
-sudo apt-get install manpages-dev
+apt update
+apt install build-essential
+apt-get install manpages-dev
 
-sudo apt-get install git 
-sudo apt-get install gcc
-sudo apt-get install scons
-sudo apt-get install zlib1g-dev libcurl4-gnutls-dev libxml2-dev libncurses5-dev libgsl0-dev check
+apt-get install git 
+apt-get install gcc
+apt-get install scons
+apt-get install zlib1g-dev libcurl4-gnutls-dev libxml2-dev libncurses5-dev libgsl0-dev check
 
 
 git clone https://github.com/opencb/hpg-aligner.git
