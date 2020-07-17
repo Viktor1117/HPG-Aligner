@@ -38,6 +38,8 @@ git clone https://github.com/opencb/hpg-aligner.git
 
 cd hpg-aligner
 
+conda install -c anaconda gcc_linux-64
+
 git submodule update --init
 
 scons
