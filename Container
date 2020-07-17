@@ -26,6 +26,8 @@ LC_ALL=C.UTF-8
     conda config --add channels conda-forge
     conda config --add channels bioconda
     conda install -c anaconda scons
+    
+    apt-get install libcurl-dev -y
 
 git clone https://github.com/opencb/hpg-aligner.git
 
