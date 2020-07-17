@@ -33,5 +33,7 @@ cd hpg-aligner
 
 git submodule update --init
 
+scons
+
 
 
