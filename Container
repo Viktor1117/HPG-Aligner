@@ -27,6 +27,7 @@ LC_ALL=C.UTF-8
     conda config --add channels bioconda
     conda install -c anaconda scons
     conda install -c anaconda gcc_linux-64 -y
+    conda install gsl -y
     
     apt-get install libncurses5-dev -y
     
@@ -37,8 +38,6 @@ cd /bin
 git clone https://github.com/opencb/hpg-aligner.git
 
 cd hpg-aligner
-
-conda install -c anaconda gcc_linux-64
 
 git submodule update --init
 
