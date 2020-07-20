@@ -27,11 +27,14 @@ LC_ALL=C.UTF-8
     conda config --add channels bioconda
     conda install -c anaconda scons
     conda install -c anaconda gcc_linux-64 -y
+    conda install -c conda-forge gcc -y
     conda install gsl -y
     
     apt-get install libncurses5-dev -y
     
     apt-get install libcurl4-openssl-dev -y
+
+include <gsl/gsl_sf_gamma.h>
 
 cd /bin
 
