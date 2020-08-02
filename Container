@@ -13,7 +13,7 @@ LC_ALL=C.UTF-8
 %post
     echo "Hello from inside the container"
     apt-get update
-    apt-get http://ftp.acc.umu.se/mirror/gnu.org/gnu/gsl/gsl-latest.tar.gz -y
+    apt-get install libgsl0-dev -y
     apt-get -y install wget git bzip2 build-essential gcc zlib1g-dev language-pack-en-base apt-transport-https make cmake unzip python3
     update-locale LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8
 
@@ -26,7 +26,12 @@ LC_ALL=C.UTF-8
     conda config --add channels defaults
     conda config --add channels conda-forge
     conda config --add channels bioconda
-    conda install -c anaconda scons
+    
+    apt-get install git 
+    
+    apt-get install gcc
+    
+    apt-get install scons
     
     apt-get install libncurses5-dev -y
     
@@ -36,11 +41,11 @@ LC_ALL=C.UTF-8
     
     apt-get install libxml2-dev -y 
     
-    apt-get install libgsl0-dev -y
-    
     apt-get install zlib1g-dev -y
     
     apt-get install libgsl0-dev check
+
+    apt-get install libgsl-dev
 
 include <gsl/gsl_sf_gamma.h>
 
