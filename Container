@@ -13,6 +13,7 @@ LC_ALL=C.UTF-8
 %post
     echo "Hello from inside the container"
     apt-get update
+    apt-utils
     apt-get install libgsl0-dev -y
     apt-get -y install wget git bzip2 build-essential gcc zlib1g-dev language-pack-en-base apt-transport-https make cmake unzip python3
     update-locale LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8
