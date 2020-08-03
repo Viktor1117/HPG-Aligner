@@ -52,7 +52,9 @@ LC_ALL=C.UTF-8
 
 include <gsl/gsl_sf_gamma.h>
 
-cd /bin
+mkdir hpg
+
+cd /hpg
 
 git clone https://github.com/opencb/hpg-aligner.git
 
